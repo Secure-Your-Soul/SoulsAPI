@@ -14,12 +14,12 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "adm-zip": "^0.5.16",
-    "geoip-lite": "^1.4.10",
+    "adm-zip": "^0.6.1",
+    "geoip-lite": "^2.0.3",
     "mongodb": "^7.0.0",
-    "mongoose": "^9.0.1",
+    "mongoose": "^9.7.2",
     "node-gyp": "^12.1.0",
-    "yaml": "^2.8.2"
+    "yaml": "^2.8.3"
   },
   "devDependencies": {
     "@types/adm-zip": "^0.5.7",
