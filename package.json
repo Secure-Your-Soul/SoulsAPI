@@ -1,0 +1,30 @@
+{
+  "name": "@secureyoursoul/soulapi",
+  "displayName": "SoulAPI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./JavaScript/api.js",
+  "types": "./JavaScript/api.d.ts",
+  "scripts": {
+    "build": "npx tsc"
+  },
+  "keywords": [],
+  "author": "Denis Rudolf Damian Kontek (Secure Your Soul)",
+  "publisher": "Denis Rudolf Damian Kontek (Secure Your Soul)",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "geoip-lite": "^1.4.10",
+    "mongodb": "^7.0.0",
+    "mongoose": "^9.0.1",
+    "node-gyp": "^12.1.0",
+    "yaml": "^2.8.2"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.7",
+    "@types/geoip-lite": "^1.4.4",
+    "@types/node": "^25.0.3",
+    "typescript": "^5.9.3"
+  }
+}
