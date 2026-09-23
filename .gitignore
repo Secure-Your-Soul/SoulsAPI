@@ -1,2 +1,3 @@
-# Rust Builds
+# Rust Entries
 **/target/*
+Cargo.lock
