@@ -4,9 +4,9 @@
 ![Pull Requests](https://img.shields.io/github/issues-pr/Secure-Your-Soul/SoulsAPI)
 ![Last commit](https://img.shields.io/github/last-commit/Secure-Your-Soul/SoulsAPI)
 
-[![Crates.io](https://img.shields.io/crates/v/soulsapi.svg)](https://crates.io/crates/soulsapi)
-[![Downloads](https://img.shields.io/crates/d/soulsapi.svg)](https://crates.io/crates/soulsapi)
-[![docs.rs](https://img.shields.io/docsrs/soulsapi)](https://docs.rs/soulsapi)
+[![Crates.io](https://img.shields.io/crates/v/souls.svg)](https://crates.io/crates/souls)
+[![Downloads](https://img.shields.io/crates/d/souls.svg)](https://crates.io/crates/souls)
+[![docs.rs](https://img.shields.io/docsrs/souls.svg)](https://docs.rs/souls)
 
 # SoulsAPI
 > 🦀 Rust API for integration with Secure Your Soul services.
@@ -36,21 +36,21 @@
 
 **Option 1 – using `cargo add`:**
 ```sh
-cargo add soulsapi --features full
+cargo add souls --features full
 ```
 
 **Option 2 – manually edit `Cargo.toml`:**
 ```toml
 [dependencies]
-# Full features (http, crypto)
-soulsapi = { version = "0.1", features = ["full"] }
+# Full features (http, crypt)
+souls = { version = "0.1", features = ["full"] }
 
 # Or pick specific features:
-# soulsapi = { version = "0.1", features = ["http"] }
-# soulsapi = { version = "0.1", features = ["http", "crypto"] }
+# souls = { version = "0.1", features = ["http"] }
+# souls = { version = "0.1", features = ["http", "crypt"] }
 
 # Or without any optional features:
-# soulsapi = { version = "0.1" }
+# souls = { version = "0.1" }
 ```
 
 ### Manually (from repository)
@@ -78,13 +78,13 @@ your-project/
 └── SoulsAPI/                    ← cloned repository
     ├── Rust/
     │   ├── Cargo.toml           ← workspace root
-    │   ├── api/                 ← crate: soulsapi (facade)
+    │   ├── souls/                 ← crate: souls (facade)
     │   │    ├── Cargo.toml
     │   │    └── src/
-    │   ├── crypto/              ← crate: soulsapi-crypto
+    │   ├── crypt/              ← crate: souls-crypt
     │   │   ├── Cargo.toml
     │   │   └── src/
-    │   └── http/                ← crate: soulsapi-http
+    │   └── http/                ← crate: souls-http
     │       ├── Cargo.toml
     │       └── src/
     ├── .gitignore
@@ -96,21 +96,21 @@ your-project/
 
 ```toml
 [dependencies]
-soulsapi = { path = "./SoulsAPI/Rust/api", features = ["full"] }
+souls = { path = "./SoulsAPI/Rust/api", features = ["full"] }
 ```
 
 ## 🚀 Quick start
 
-> **Note:** The `http` and `crypto` modules are only available when their
-> respective features are enabled. Add `features = ["http", "crypto"]`,
+> **Note:** The `http` and `crypt` modules are only available when their
+> respective features are enabled. Add `features = ["http", "crypt"]`,
 > or `features = ["full"]` to enable all of them.
 
 ```rust
-use soulsapi::{http, crypto};
+use souls::{http, crypt};
 
 fn main() {
     http::hi();
-    crypto::hi();
+    crypt::hi();
 }
 ```
 
@@ -119,12 +119,12 @@ fn main() {
 | Feature | What it enables |
 |---|---|
 | `http` | 🌐 HTTP helpers |
-| `crypto` | 🔐 Cryptography utilities |
+| `crypt` | 🔐 Cryptography utilities |
 | `full` | All of the above |
 
 ## 📚 Documentation
 
-- API reference: <https://docs.rs/soulsapi>
+- API reference: <https://docs.rs/souls>
 - Code of Conduct: [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)
 - Credits: [CREDITS.md](./CREDITS.md)
 - Changelog: [CHANGELOG.md](./CHANGELOG.md)

@@ -1,0 +1,22 @@
+[package]
+name = "souls"
+edition.workspace = true
+rust-version.workspace = true
+readme.workspace = true
+license.workspace = true
+authors.workspace = true
+keywords.workspace = true
+categories.workspace = true
+repository.workspace = true
+homepage.workspace = true
+description = "SoulsAPI (facade) for the Secure Your Soul project"
+
+[dependencies]
+souls-http.workspace = true
+souls-crypt.workspace = true
+
+[features]
+default = []
+http = []
+crypt = []
+full = ["http", "crypt"]
