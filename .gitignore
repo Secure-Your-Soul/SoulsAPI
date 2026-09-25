@@ -1,4 +1,3 @@
-# node_modules
-node_modules
-# Output
-JavaScript
+# Rust Entries
+**/target/*
+Cargo.lock

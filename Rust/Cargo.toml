@@ -1,0 +1,18 @@
+[workspace]
+resolver = "2"
+members = [
+    "http",
+    "crypto",
+    "api",
+]
+
+[workspace.package]
+version = "0.0.1"
+edition = "2024"
+license = "Apache-2.0"
+description = "SecureSouls shared API"
+repository = "https://github.com/Secure-Your-Soul/SoulsAPI"
+
+[workspace.dependencies]
+api-http = { path = "http", version = "0.0.1" }
+api-crypto = { path = "crypto", version = "0.0.1" }
