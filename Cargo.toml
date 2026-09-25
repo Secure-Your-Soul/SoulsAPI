@@ -1,0 +1,24 @@
+[workspace]
+resolver = "2"
+members = [
+    "http",
+    "crypt",
+    "api",
+]
+
+[workspace.package]
+version = "0.0.1"
+edition = "2024"
+rust-version = "1.98.1"
+license-file = "LICENSE.md"
+authors = ["Denis Kontek <deniskontek@securesouls.com>"]
+keywords = ["api-bindings", "cryptography", "http-client"]
+categories = ["api", "api::http", "api::crypt"]
+readme = "README.md"
+repository = "https://github.com/Secure-Your-Soul/SoulsAPI"
+homepage = "https://github.com/Secure-Your-Soul/SoulsAPI"
+description = "SoulsAPI for the Secure Your Soul project"
+
+[workspace.dependencies]
+souls-http = { path = "http", version = "0.0.1" }
+souls-crypt = { path = "crypt", version = "0.0.1" }

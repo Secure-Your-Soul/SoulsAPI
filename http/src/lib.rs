@@ -1,4 +1,4 @@
 #[warn(unused)]
 pub fn hi() {
-    println!("Hello Http");
+    println!("Hello http");
 }
