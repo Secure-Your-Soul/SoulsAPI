@@ -1,19 +1,19 @@
 [workspace]
 resolver = "2"
 members = [
+    "souls",
     "http",
     "crypt",
-    "api",
 ]
 
 [workspace.package]
 version = "0.0.1"
 edition = "2024"
 rust-version = "1.98.1"
-license-file = "LICENSE.md"
+license = "Apache-2.0"
 authors = ["Denis Kontek <deniskontek@securesouls.com>"]
-keywords = ["api-bindings", "cryptography", "http-client"]
-categories = ["api", "api::http", "api::crypt"]
+keywords = ["secure-soul-soul", "api", "soulsapi", "http", "souls-http", "crypto", "souls-crypt"]
+categories = ["api-bindings", "cryptography", "web-programming::http-client"]
 readme = "README.md"
 repository = "https://github.com/Secure-Your-Soul/SoulsAPI"
 homepage = "https://github.com/Secure-Your-Soul/SoulsAPI"
