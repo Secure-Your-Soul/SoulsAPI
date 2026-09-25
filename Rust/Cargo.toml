@@ -9,7 +9,7 @@ members = [
 [workspace.package]
 version = "0.0.1"
 edition = "2024"
-license = "UNLICENSED"
+license = "Apache-2.0"
 description = "SecureSouls shared API"
 repository = "https://github.com/Secure-Your-Soul/SoulsAPI"
 
