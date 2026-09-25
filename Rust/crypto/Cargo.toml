@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: Apache-2.0
+# SPDX-FileCopyrightText: 2026 Denis Kontek / Secure Your Soul
+[package]
+name = "api-crypto"
+version = "0.0.1"
+edition.workspace = true
+license.workspace = true
+description = "Cryptography utilities for SecureSouls"
+repository.workspace = true
