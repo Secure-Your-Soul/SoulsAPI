@@ -11,3 +11,4 @@ categories.workspace = true
 repository.workspace = true
 homepage.workspace = true
 description = "SoulsAPI Cryptography utilities"
+documentation = "https://docs.rs/souls-crypt"
