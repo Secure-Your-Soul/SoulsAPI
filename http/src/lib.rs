@@ -1,4 +1,5 @@
-use axum::{extract::State, routing::get, Router};
+#![allow(clippy::multiple_crate_versions)]
+use axum::{Router, extract::State, routing::get};
 
 #[derive(Clone, Debug)]
 pub struct Config {
@@ -13,17 +14,19 @@ impl Default for Config {
         }
     }
 }
-// Methods you can use to change config default values
 impl Config {
+    #[must_use]
     pub fn new() -> Self {
         Self::default()
     }
 
+    #[must_use]
     pub fn company(mut self, company: impl Into<String>) -> Self {
         self.company = company.into();
         self
     }
 
+    #[must_use]
     pub fn domain(mut self, domain: impl Into<String>) -> Self {
         self.domain = domain.into();
         self
@@ -31,9 +34,7 @@ impl Config {
 }
 
 pub fn create_router(config: Config) -> Router {
-    Router::new()
-        .route("/", get(root))
-        .with_state(config)
+    Router::new().route("/", get(root)).with_state(config)
 }
 
 pub async fn root(State(config): State<Config>) -> String {
