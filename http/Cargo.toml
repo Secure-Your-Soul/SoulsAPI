@@ -15,4 +15,3 @@ documentation = "https://docs.rs/souls-http"
 
 [dependencies]
 axum = { version = "0.8", default-features = false }
-maud = { version = "0.27", features = ["axum"] }
