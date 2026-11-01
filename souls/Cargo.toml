@@ -14,13 +14,13 @@ description = "SoulsAPI (facade) for the Secure Your Soul project"
 documentation = "https://docs.rs/souls"
 
 [dependencies]
-souls-http.workspace = true
-souls-crypt.workspace = true
-souls-sdk.workspace = true
+souls-http  = { workspace = true, optional = true }
+souls-crypt = { workspace = true, optional = true }
+souls-sdk   = { workspace = true, optional = true }
 
 [features]
 default = []
-http = []
-crypt = []
-sdk = []
-full = ["http", "crypt", "sdk"]
+http  = ["dep:souls-http"]
+crypt = ["dep:souls-crypt"]
+sdk   = ["dep:souls-sdk"]
+full  = ["http", "crypt", "sdk"]
