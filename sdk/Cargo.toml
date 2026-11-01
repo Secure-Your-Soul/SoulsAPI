@@ -18,10 +18,9 @@ name = "souls_sdk"
 
 [dependencies]
 rustix = { version = "1.1", features = [
-    "fs",       # open, read, write, mkdir, ...
-    "io",       # io::read, io::write, io::dup2, ...
+    "fs",       # open, read, write, mkdir
     "mount",    # mount, umount
-    "process",  # waitpid, getpid, sigprocmask, ...
+    "process",  # waitpid, getpid, sigprocmask
     "stdio",    # stdio::stdout, stdio::stderr
     "runtime",  # exit_group
 ] }
