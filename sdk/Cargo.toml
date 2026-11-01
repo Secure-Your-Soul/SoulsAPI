@@ -17,5 +17,12 @@ documentation = "https://docs.rs/souls-sdk"
 name = "souls_sdk"
 
 [dependencies]
-rustix = "1.1" 
+rustix = { version = "1.1", features = [
+    "fs",       # open, read, write, mkdir, ...
+    "io",       # io::read, io::write, io::dup2, ...
+    "mount",    # mount, umount
+    "process",  # waitpid, getpid, sigprocmask, ...
+    "stdio",    # stdio::stdout, stdio::stderr
+    "runtime",  # exit_group
+] }
 rusty_alloc = { package = "ps-rusty_alloc", version = "2.3" }
