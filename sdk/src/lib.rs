@@ -5,6 +5,8 @@
 //! against the SDK and get `std`, threads, and allocation without a
 //! single line of C under the hood.
 
+pub use rustix;
+
 // Re-export the allocator so downstream users can reference it if needed.
 pub use rusty_alloc::RustyAlloc;
 

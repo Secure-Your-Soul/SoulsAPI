@@ -16,6 +16,7 @@ documentation = "https://docs.rs/souls"
 [dependencies]
 souls-http.workspace = true
 souls-crypt.workspace = true
+souls-sdk.workspace = true
 
 [features]
 default = []

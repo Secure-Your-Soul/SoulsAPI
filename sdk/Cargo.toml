@@ -17,27 +17,5 @@ documentation = "https://docs.rs/souls-sdk"
 name = "souls_sdk"
 
 [dependencies]
-# Rust implementation of the libc ABI, replacing the C glibc.
-# `take-charge` mode overrides process startup and delivers malloc via c-scape.
-# `malloc-via-rust-global-alloc` makes malloc delegate to #[global_allocator]
-c-gull = { version = "0.22", default-features = false, features = [
-    "take-charge",
-    "std",
-    "thread",
-    "call-main",
-    "malloc-via-rust-global-alloc",
-] }
+rustix = "1.1" 
 rusty_alloc = { package = "ps-rusty_alloc", version = "2.3" }
-
-[dependencies.libc]
-package = "c-gull"
-version = "0.22"
-default-features = false
-features = ["take-charge", "std", "thread", "call-main", "malloc-via-rust-global-alloc"]
-
-[profile.release]
-panic = "abort"
-opt-level = "z"
-lto = "fat"
-codegen-units = 1
-strip = true
