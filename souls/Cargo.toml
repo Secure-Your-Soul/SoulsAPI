@@ -21,4 +21,5 @@ souls-crypt.workspace = true
 default = []
 http = []
 crypt = []
-full = ["http", "crypt"]
+sdk = []
+full = ["http", "crypt", "sdk"]
